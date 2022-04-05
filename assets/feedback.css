@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #000000;
+    overflow: hidden;
+}
+#heading{
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 30px;
+    /* font-size: 150%; */
+}
+/*Properties for navigation*/
+
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+    position: absolute;
+    top: 5%;
+    left: 3%;
+}
+.navigation button{
+    border: none;
+    padding: 10px 15px;
+    border-radius: 7px;
+    background-color: #262626;
+    color: white;
+    font-size: 170%;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+.navigation button:hover{
+    transform: scale(1.02);
+    background-color: #333333;
+}
+
+/*Properties main box*/
+
+.container{
+    font-family: 'Montserrat', sans-serif;
+    width: 30%;
+    height: 60%;
+    padding: 10px 5px;
+    border-radius: 7px;
+    background-color: white;
+}
+.container h1{
+    color: black;
+    margin: 10px;
+}
+.container input{
+    font-size: 100%;
+    width: 70%;
+    padding: 10px 5px;
+    border-radius: 5px;
+    outline: none;
+    margin: 10px 0px;
+    border: 2px solid rgb(65, 64, 64);
+}
+#message{
+    height: 100px;
+}
+.container form{
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+form button{
+    padding: 10px 15px;
+    font-size: 130%;
+    margin-top: 20px;
+    border-radius: 5px;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    border: none;
+    background-image: linear-gradient(to right, #25aae1, #40e495, #30dd8a, #2bb673);
+    background-size: 300% 100%;
+    transition: all .3s ease-in-out;
+}
+button:hover {
+    background-position: 100% 0;
+    cursor: pointer;
+}
+button:active{
+    transform: scale(0.97);
+}

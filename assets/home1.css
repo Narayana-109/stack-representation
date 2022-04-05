@@ -1,0 +1,145 @@
+#orangegrad{
+    background-image: linear-gradient(#E75B7A,#F7D78C);
+}
+#bluegrad{
+    background-image: linear-gradient(#2F1DA2,#70b7f5);
+}
+#cyangrad{
+    background-image: linear-gradient(#245B94,#44C89E);
+}
+#purpgrad{
+    background-image: linear-gradient(#3800A0,#E860F0);
+}
+#heading{
+    position: relative;
+    display: flex;
+}
+#heading a{
+    text-decoration: none;
+    color: white;
+}
+#heading button{
+    position: absolute;
+    right: -100px;
+    width: 10%;
+    height: 50px;
+    font-size: 18px;
+    margin: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #000000;
+    transition: all .3s ease;
+}
+#heading button:hover{
+   transform: scale(1.08);
+   background-color: #2E2E2E;
+}
+video{
+    position: absolute;
+    z-index: -10;
+    bottom: -35%;
+    transform: rotateZ(180deg);
+}
+body{
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    background-position: center;
+    background-size: cover;
+    width: 90vw;
+    height: 97.5vh;
+}
+center{
+    font-size: 50px;
+    font-family: 'Secular One', sans-serif;
+    color: rgb(255, 255, 255);
+    margin-left: 65px;
+    animation-name: textcolor;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+@keyframes textcolor {
+    0%{
+        color: white;
+    }
+    50%{
+        color: rgb(26, 26, 26);
+    }
+    100%{
+        color: white;
+    }
+    
+}
+.main-wrap{
+    position: relative;
+    top: 35%;
+}
+/*Properties for stack container*/
+
+#container{
+    position: absolute;
+    top: -87px;
+    left: 0;
+    transform:rotate3d(0,0,1,-90deg);
+    width: 42%;
+    height: 40%;
+}
+
+/*Properties for each stack*/
+
+.stack{
+    position: absolute;
+    top: 5%;
+    left: -10%;
+    width: 220px;
+    height: 250px;
+    transition: all .6s ease-in-out;
+    background-position: center;
+    background-size: cover;
+    font-size: 800%;
+    color: white;
+    padding: 0 10px;
+    font-family: 'Secular One', sans-serif;
+
+}
+
+/*Properties for menu container*/
+
+.operat{
+    position: relative;
+    right: -600px;
+    top: -200px;
+    width: 50%;
+    height: 75%;
+    background: transparent;
+    border-radius: 5px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 20px 5px rgb(9, 9, 9);
+}
+.buttons{
+    margin: 0 50px;
+    display: flex;
+    flex-direction: column;
+}
+.button{
+    font-family: 'Secular One', sans-serif;
+    border-radius: 5px;
+    background-color: rgb(2, 2, 2);
+    color: rgb(233, 233, 233);
+    border: none;
+    outline: none;
+    width: 100%;
+    padding: 20px 100px;
+    font-size: 2rem;
+    margin: 10px 0;
+    box-shadow: 5px 5px 10px rgb(14, 14, 14);
+    transition: all .3s ease;
+}
+.button:hover{
+    background-color: #2E2E2E;
+    transform: scale(1.07);
+}
